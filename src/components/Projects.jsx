@@ -1,4 +1,5 @@
 import ProjectCard from './ProjectCard';
+import { projects } from '../data/projects';
 
 function Projects() {
   return (
@@ -6,9 +7,15 @@ function Projects() {
       <div className="container">
         <h2>Projects</h2>
         <div className="card-grid">
-          <ProjectCard title="Proje 1" description="Kısa açıklama buraya." />
-          <ProjectCard title="Proje 2" description="Kısa açıklama buraya." />
-          <ProjectCard title="Proje 3" description="Kısa açıklama buraya." />
+          {projects.map((p) => (
+            <ProjectCard
+              key={p.id}
+              title={p.title}
+              description={p.description}
+              tech={p.tech}
+              link={p.link}
+            />
+          ))}
         </div>
       </div>
     </section>

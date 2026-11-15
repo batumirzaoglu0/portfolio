@@ -32,3 +32,9 @@
 .contact-list { display: flex; gap: 1.5rem; }
 .contact-list a { color: var(--accent); font-weight: 600; }
 .footer { text-align: center; padding: 1.5rem; border-top: 1px solid #e5e7eb; }
+/* Project card details */
+.tags { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 0.75rem 0; }
+.tags li { background: var(--bg-alt); padding: 0.2rem 0.6rem; border-radius: 6px; font-size: 0.85rem; }
+.card { transition: transform 0.2s, box-shadow 0.2s; }
+.card:hover { transform: translateY(-4px); box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1); }
+.card-link { color: var(--accent); font-weight: 600; }
