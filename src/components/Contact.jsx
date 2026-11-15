@@ -1,5 +1,6 @@
 const contacts = [
   { label: 'GitHub', text: 'github.com/batumirzaoglu0', href: 'https://github.com/batumirzaoglu0' },
+  { label: 'LinkedIn', text: 'Batu Mirzaoğlu', href: 'https://www.linkedin.com/in/batu-mirzao%C4%9Flu-2a6700444/' },
   { label: 'Email', text: 'batumirzaoglu0@gmail.com', href: 'mailto:batumirzaoglu0@gmail.com' },
 ];
 

@@ -8,4 +8,28 @@ export const projects = [
     category: 'Web',
     link: 'https://github.com/batumirzaoglu0/portfolio',
   },
+  {
+    id: 2,
+    title: 'C Programming',
+    description: 'Currently learning C to build strong programming fundamentals.',
+    tech: ['C'],
+    category: 'Learning',
+    link: '',
+  },
+  {
+    id: 3,
+    title: 'Python',
+    description: 'Currently learning Python, with an eye on AI and machine learning.',
+    tech: ['Python'],
+    category: 'Learning',
+    link: '',
+  },
+  {
+    id: 4,
+    title: 'Java',
+    description: 'Currently exploring Java and object-oriented programming basics.',
+    tech: ['Java'],
+    category: 'Learning',
+    link: '',
+  },
 ];
