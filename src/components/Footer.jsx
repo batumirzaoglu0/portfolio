@@ -1,7 +1,7 @@
 function Footer() {
   return (
     <footer className="footer">
-      <p>© 2026 Batu Mirzaoğlu</p>
+      <p>© 2026 Batu Mirzaoğlu · Built with React &amp; Vite</p>
     </footer>
   );
 }

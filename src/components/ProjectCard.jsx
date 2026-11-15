@@ -1,6 +1,7 @@
-function ProjectCard({ title, description, tech, link }) {
+function ProjectCard({ title, description, tech, category, link }) {
   return (
     <article className="card">
+      <span className="badge">{category}</span>
       <h3>{title}</h3>
       <p>{description}</p>
       <ul className="tags">
@@ -10,7 +11,7 @@ function ProjectCard({ title, description, tech, link }) {
       </ul>
       {link && (
         <a href={link} target="_blank" rel="noreferrer" className="card-link">
-          GitHub'da Gör →
+          View on GitHub →
         </a>
       )}
     </article>

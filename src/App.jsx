@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
@@ -7,11 +7,16 @@ import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import './App.css';
+
 function App() {
   const [dark, setDark] = useState(true);
 
+  useEffect(() => {
+    document.documentElement.dataset.theme = dark ? 'dark' : 'light';
+  }, [dark]);
+
   return (
-    <div className={dark ? 'app dark' : 'app'}>
+    <>
       <Navbar dark={dark} onToggle={() => setDark(!dark)} />
       <main>
         <Hero />
@@ -21,7 +26,7 @@ function App() {
         <Contact />
       </main>
       <Footer />
-    </div>
+    </>
   );
 }
 
