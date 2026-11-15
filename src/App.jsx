@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import Reveal from './components/Reveal';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
@@ -21,12 +22,12 @@ function App() {
     {dark && <ShootingStars />}
       <Navbar dark={dark} onToggle={() => setDark(!dark)} />
       <main>
-        <Hero />
-        <About />
-        <Skills />
-        <Projects />
-        <Contact />
-      </main>
+  <Hero />
+  <Reveal><About /></Reveal>
+  <Reveal><Skills /></Reveal>
+  <Reveal><Projects /></Reveal>
+  <Reveal><Contact /></Reveal>
+</main>
       <Footer />
     </>
   );
