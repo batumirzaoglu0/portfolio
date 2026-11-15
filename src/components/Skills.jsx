@@ -1,14 +1,14 @@
+const skills = ["Python", "C", "Git & GitHub", "React", "HTML & CSS"];
+
 function Skills() {
   return (
     <section id="skills" className="section alt">
       <div className="container">
         <h2>Skills</h2>
         <ul className="skill-list">
-          <li>Python</li>
-          <li>C</li>
-          <li>Git &amp; GitHub</li>
-          <li>React</li>
-          <li>HTML &amp; CSS</li>
+          {skills.map((s) => (
+            <li key={s}>{s}</li>
+          ))}
         </ul>
       </div>
     </section>
