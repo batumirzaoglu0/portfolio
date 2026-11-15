@@ -6,6 +6,7 @@ import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import ShootingStars from './components/ShootingStars';
 import './App.css';
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
 
   return (
     <>
+    {dark && <ShootingStars />}
       <Navbar dark={dark} onToggle={() => setDark(!dark)} />
       <main>
         <Hero />
