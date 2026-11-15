@@ -6,7 +6,7 @@ function Hero() {
         <h1>Batu Mirzaoğlu</h1>
         <p className="lead">
           İKÇÜ Bilgisayar Mühendisliği öğrencisiyim. Yazılım geliştirme ve
-          yapay zekâ ile ilgileniyorum..............
+          yapay zekâ ile ilgileniyoruuuuum..............
         </p>
         <a href="#projects" className="btn">Projelerime Bak</a>
       </div>
