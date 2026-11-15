@@ -7,9 +7,8 @@ import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import './App.css';
-
 function App() {
-  const [dark, setDark] = useState(false);
+  const [dark, setDark] = useState(true);
 
   return (
     <div className={dark ? 'app dark' : 'app'}>
